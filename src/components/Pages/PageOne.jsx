@@ -20,7 +20,7 @@ function PageOne() {
     }
 
     const nextPage = () => {
-        if (feeling.length > 0) {
+        if (feeling > 0) {
             history.push('/page-2');
         } else {
             alert('Please submit a response.');
