@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 import './App.css';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import PageOne from '../Pages/PageOne';
@@ -7,6 +6,7 @@ import PageTwo from '../Pages/PageTwo';
 import PageThree from '../Pages/PageThree';
 import PageFour from '../Pages/PageFour';
 import PageFive from '../Pages/PageFive';
+import PageSix from '../Pages/PageSix';
 
 function App() {
 
@@ -32,8 +32,9 @@ function App() {
       <Route exact path="/page-5">
         <PageFive />
       </Route>
-
- 
+      <Route exact path="/page-6">
+        <PageSix />
+      </Route>
       </Router>
     </div>
   );
