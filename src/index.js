@@ -13,14 +13,14 @@ const feeling = (state = '', action) => {
     return state;
 }
 
-const understanding = (state = '', action) => {
+const understanding = (state = 0, action) => {
     if (action.type === 'SET_UNDERSTANDING'){
         return action.payload;
     }
     return state;
 }
 
-const support = (state = '', action) => {
+const support = (state = 0, action) => {
     if (action.type === 'SET_SUPPORT'){
         return action.payload;
     }
